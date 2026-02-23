@@ -1,0 +1,141 @@
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f5f5f5;
+    color:#333;
+}
+p{
+    font-size:18px;
+}
+
+/* Header */
+.cabecera{
+    position: relative;
+    background:url('https://media.gettyimages.com/id/869851902/es/foto/nuestra-se%C3%B1ora-de-la-catedral-de-la-asunci%C3%B3n-granada.jpg?s=1024x1024&w=gi&k=20&c=73NZe7klXbNqYyHF3Oe0TJ6i6aWFif__onLy4iI3hU0=') center/cover no-repeat;
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+    overflow: hidden;
+}
+
+/* Capa azul transparente */
+.cabecera::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0, 40, 120, 0.6); /* azul elegante */
+    z-index:0;
+}
+
+/* texto encima */
+.cabecera h1,
+.cabecera p{
+    position: relative;
+    z-index:1;
+}
+
+.cabecera h1{
+    font-size:60px;
+    margin:0;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+.cabecera p{
+    max-width:600px;
+    margin:15px auto;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+}
+
+.section{
+    padding:40px 20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.section h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+/* Información de Granada */
+.sobre{
+    padding:60px 20px;
+    background:white;
+}
+
+.sobre-contenido{
+    max-width:1100px;
+    margin:auto;
+    display:flex;
+    gap:40px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.sobre-texto{
+    flex:1;
+}
+
+.sobre-texto h2{
+    margin-bottom:20px;
+    font-size:30px;
+}
+
+.sobre-texto p{
+    line-height:1.7;
+    margin-bottom:15px;
+    text-align: justify;
+}
+
+.sobre-imagen{
+    flex:1;
+}
+
+.sobre-imagen img{
+    width:100%;
+    border-radius:12px;
+}
+
+/* Estilo de la Galería */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:10px;
+    height:200px;
+    object-fit:cover;
+}
+
+/* altura del mapa */
+#map{
+    height:80vh;
+    border-radius:10px;
+}
+
+/* Pies de página*/
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+/* css para puntos del mapa*/
+.popup-img{
+    width:100%;
+    border-radius:8px;
+    margin-bottom:5px;
+}
+
+@media (max-width:600px){
+    .hero h1{
+        font-size:28px;
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa iterativo - Granada Cultural</title>
+
+    <!--Libreria de css de leaflet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/> 
+    <!--Css de la página-->
+    <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header class="cabecera">
+        <h1>Granada, Nicaragua</h1>
+        <p>Ciudad colonial fundada en 1524, reconocida por su arquitectura histórica,
+        cultura vibrante y belleza natural.</p>
+    </header>
+
+    <!-- información de Granada -->
+
+    <section class="sobre">
+        <div class="sobre-contenido">
+            <div class="sobre-texto">
+                <h2>Sobre Granada</h2>
+                <p>
+                     <strong>Granada, conocida como la “Gran Sultana”</strong>, es una de las ciudades más emblemáticas de Nicaragua y una de las más antiguas del continente americano. Fundada en 1524, se ubica a orillas del majestuoso Lago Cocibolca, el lago más grande de Centroamérica, lo que le otorga un entorno natural privilegiado.
+                </p>
+
+                <p>
+                    Sus calles empedradas, arquitectura colonial y monumentos históricos
+                    la convierten en uno de los destinos turísticos más importantes del país.
+                    Destacan la Catedral, el Convento San Francisco y las Isletas.
+                </p>
+                <p>
+                    Uno de sus mayores tesoros naturales son las Isletas de Granada, 
+                    un conjunto de pequeñas islas formadas por actividad volcánica del Mombacho, 
+                    que hoy representan un importante atractivo turístico y ecológico. 
+                    Además, la ciudad es escenario de festividades tradicionales, expresiones artísticas y
+                     una rica gastronomía local que reflejan la identidad cultural del pueblo granadino.
+                </p>
+            </div>
+
+            <div class="sobre-imagen">
+                <img src="https://www.welcometonicaragua.net/wp-content/uploads/2016/05/granada-islets.jpg">
+                <img src="https://edventure-travel.com/wp-content/uploads/2017/12/Granada-Nicaragua-22-940x580.jpg">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Galería de fotos -->
+    <div class="section">
+        <h2>Galería Cultural</h2>
+        <div class="gallery">
+            <img src="https://www.el19digital.com/files/notas/source/2018/00-Agosto/Del13al19Agosto/domingo18ag/GRANADA%20FESTIVAL/PROMO1.jpeg">
+            <img src="https://lh3.googleusercontent.com/proxy/5mEJNdkaRxGUGPM2ltpO9w9gpiIUsPMC324bCDNevtJXx0mGpxB4XRBujkdq8sva-Ge5U0nMOPI2o8rcszTa57V_joqyTxipuJKusKlRKVjLzmXE2-2nK0xvHA">
+            <img src="https://www.visitanicaragua.com/wp-content/uploads/2018/08/Plaza-Independencia-Nicaragua-Granada.jpg">
+            <img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fzmdabpr74duu3ngue6g23th/bafkreidrrpo5fuux5kqvapisqiruf2m2i7sahhahjvf7l5wver3w3gwijm@jpeg">
+            <img src="https://i0.wp.com/efe.com/wp-content/uploads/2024/04/Granada3.jpg?resize=980%2C610&ssl=1">
+            <img src="https://500granada.com/wp-content/uploads/2024/12/xcnmnnnnnnnn-1.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- MAPA -->
+    <div class="section">
+        <h2>Mapa Interactivo</h2>
+        <div id="map"></div>
+    </div>
+
+    <footer>
+    Proyecto Académico 2026 - Cultura de Granada
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="js/mapa.js"></script>
+    </body>
+</html>
