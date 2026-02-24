@@ -134,8 +134,14 @@ footer{
     margin-bottom:5px;
 }
 
-@media (max-width:600px){
-    .hero h1{
-        font-size:28px;
+
+@media (max-width: 768px) {
+    .sobre-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre-texto p {
+        text-align: justify;
     }
 }
