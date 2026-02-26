@@ -26,7 +26,7 @@ function agregarPunto(lat,lng,titulo,imagen,descripcion){
 agregarPunto(
     11.9319,-85.9522,
     "Convento san francisco",
-    "img/convento.jpeg",
+    "img/convento.jpg",
     "La fundación de dicho inmueble data de 1529 bajo el nombre de Inmaculada Concepción de María por Fray Toribio de Benavente, eclesiástico de la orden franciscana, conocido por su sencillez y pobreza; el convento fue inicialmente construido con paredes de madera y techo de paja. La Iglesia y el convento fueron incendiados tres veces, las dos primeras por invasiones piratas, siendo la más destacada la del Pirata Morgan y la última fue por el filibustero William Walker."
 );
 
