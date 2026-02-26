@@ -115,7 +115,7 @@ p{
 
 /* altura del mapa */
 #map{
-    height:80vh;
+    height:90vh;
     border-radius:10px;
 }
 
@@ -128,13 +128,39 @@ footer{
     margin-top:30px;
 }
 /* css para puntos del mapa*/
-.popup-img{
-    width:100%;
-    border-radius:8px;
-    margin-bottom:5px;
+
+/* Estilo general del popup */
+.leaflet-popup-content {
+    padding: 10px;
+        margin: 8px;
+    max-width: 260px;
+    max-height: 320px;
+    overflow-y: auto;
+
 }
 
+.popup-img{
+    width: 100%;
+    height: auto;          
+    max-height: 220px;     
+    object-fit: contain;   
+    border-radius: 10px;
+    margin: 8px 0;
 
+}
+@media (max-width: 768px) {
+
+    .leaflet-popup-content-wrapper {
+        max-width: 260px;
+        padding: 10px;
+    }
+
+    .popup-img {
+        max-width: 90%;
+        max-height: 180px;
+    }
+
+}
 @media (max-width: 768px) {
     .sobre-contenido {
         flex-direction: column;
